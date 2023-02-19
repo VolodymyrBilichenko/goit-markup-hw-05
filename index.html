@@ -10,6 +10,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700;800;900&display=swap"
         rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
 
     <title>Web Studio</title>
 
@@ -51,7 +52,7 @@
         <section class="banner">
             <div class="container">
                 <h1>Effective Solutions for Your Business</h1>
-                <button class="btn" type="button">Order Service</button>
+                <button class="btn" type="button" data-modal-open>Order Service</button>
             </div>
         </section>
         <section class="info">
@@ -380,9 +381,9 @@
         </div>
     </footer>
 
-    <div class="backdrop">
+    <div class="backdrop is-hidden" data-modal>
         <div class="modal">
-            <button class="modal-btn">
+            <button class="modal-btn" data-modal-close>
                 <svg class="modal-icon">
                     <use href="./images/symbol-defs.svg#icon-close"></use>
                 </svg>
@@ -391,7 +392,7 @@
     </div>
 
 
-    <script src="./js/main.js"></script>
+    <script src="./js/modal.js"></script>
 </body>
 
 </html>
